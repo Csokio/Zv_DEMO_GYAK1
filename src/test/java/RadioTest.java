@@ -1,7 +1,3 @@
-package FunctionTests;
-
-import WebPages.BasePage;
-import WebPages.RadioPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

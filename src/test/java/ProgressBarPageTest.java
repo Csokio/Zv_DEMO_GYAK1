@@ -1,6 +1,3 @@
-package FunctionTests;
-
-import WebPages.ProgressBarPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,3 @@
-package FunctionTests;
-
-import WebPages.BasePage;
 import org.junit.jupiter.api.*;
 
 

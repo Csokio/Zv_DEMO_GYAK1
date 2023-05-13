@@ -1,7 +1,4 @@
-package FunctionTests;
-
 import org.junit.jupiter.api.AfterAll;
-import WebPages.Pages;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 
