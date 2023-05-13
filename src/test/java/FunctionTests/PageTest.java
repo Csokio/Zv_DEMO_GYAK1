@@ -6,14 +6,10 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class PageTest {
 
-    public PageTest()
-    {
-        super();
-    }
     @BeforeEach
     public void setup()
     {
-        new PageTest();
+        new Pages();
     }
     @AfterAll
     protected static void closeTheDriver()
