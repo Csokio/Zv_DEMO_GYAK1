@@ -11,7 +11,7 @@ public class DualListTest extends PageTest{
     @Test
     public void testAddAllToList()
     {
-        DualListPage dualListPage = new DualListPage();
+        DualListPage dualListPage = new DualListPage(driver);
 
         HashMap<Boolean, Integer> actualMap = dualListPage.getSelectSize();
         HashMap<Boolean, Integer> expectedMap = new HashMap<>(){{ put(true, 15); }};
@@ -22,7 +22,7 @@ public class DualListTest extends PageTest{
     @Test
     public void testIsRightItemAdded()
     {
-        DualListPage dualListPage = new DualListPage();
+        DualListPage dualListPage = new DualListPage(driver);
 
         HashMap<Integer, Boolean> actualMap = dualListPage.isSelectedItemTrue("Julia");
         HashMap<Integer, Boolean> expectedMap = new HashMap<>(){{ put(14, true); }};

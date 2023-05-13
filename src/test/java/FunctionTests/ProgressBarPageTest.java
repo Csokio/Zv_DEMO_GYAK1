@@ -9,7 +9,7 @@ public class ProgressBarPageTest extends PageTest{
     @Test
     public void testIsBarLoaded()
     {
-        ProgressBarPage progressBarPage = new ProgressBarPage();
+        ProgressBarPage progressBarPage = new ProgressBarPage(driver);
 
         Assertions.assertTrue(progressBarPage.getLoadingValue());
     }

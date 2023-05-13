@@ -1,15 +1,16 @@
 package WebPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AlertPage extends Pages{
 
-    public AlertPage()
+    public AlertPage(WebDriver driver)
     {
-        super();
+        super(driver);
     }
 
     private final String url = "http://demo.seleniumeasy.com/javascript-alert-box-demo.html";

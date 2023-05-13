@@ -1,12 +1,13 @@
 package WebPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 public class BasePage extends Pages {
 
-    public BasePage()
+    public BasePage(WebDriver driver)
     {
-        super();
+        super(driver);
     }
 
     private final String url = "http://demo.seleniumeasy.com/basic-first-form-demo.html";
@@ -51,6 +52,6 @@ public class BasePage extends Pages {
     {
         findElementLocatedBy(BUTTON_INPUT_FORMS).click();
         findElementLocatedBy(BUTTON_RADIO_DEMO).click();
-        return new RadioPage();
+        return new RadioPage(driver);
     }
 }

@@ -10,7 +10,7 @@ public class RadioTest extends PageTest{
     @Test
     public void testSingleRadio()
     {
-        BasePage basePage = new BasePage();
+        BasePage basePage = new BasePage(driver);
         basePage.navigate();
 
         RadioPage radioPage = basePage.goToRadioPage();
@@ -25,7 +25,7 @@ public class RadioTest extends PageTest{
     @Test
     public void testMultipleRadio()
     {
-        RadioPage radioPage = new RadioPage();
+        RadioPage radioPage = new RadioPage(driver);
 
         String actual = radioPage.getValues();
         String expected = "Sex : Male\n" +

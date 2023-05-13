@@ -1,15 +1,16 @@
 package WebPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.HashMap;
 
 public class DualListPage extends Pages{
 
-    public DualListPage()
+    public DualListPage(WebDriver driver)
     {
-        super();
+        super(driver);
     }
 
     private final String url = "http://demo.seleniumeasy.com/jquery-dual-list-box-demo.html";

@@ -11,7 +11,7 @@ public class AlertTest extends PageTest{
     @Test
     public void testSingleAlert()
     {
-        AlertPage alertPage = new AlertPage();
+        AlertPage alertPage = new AlertPage(driver);
 
         String actual = alertPage.getSingleAlertMessage("John Wick");
         String expected = "You have entered 'John Wick' !";
@@ -22,7 +22,7 @@ public class AlertTest extends PageTest{
     @Test
     public void testMultipleAlert()
     {
-        AlertPage alertPage = new AlertPage();
+        AlertPage alertPage = new AlertPage(driver);
 
         List<String> actualList = alertPage.getMultipleAlertMessage("Luke", "Leila");
         String expected = "You have entered 'Luke' !";

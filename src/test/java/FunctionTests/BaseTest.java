@@ -9,7 +9,7 @@ public class BaseTest extends PageTest{
     @Test
     public void testSumOfValidNumbers()
     {
-        BasePage basePage = new BasePage();
+        BasePage basePage = new BasePage(driver);
 
         basePage.navigate();
         int actual = basePage.getValidSum(10,20);
@@ -21,7 +21,7 @@ public class BaseTest extends PageTest{
     @Test
     public void testSumOfInvalidNumbers()
     {
-        BasePage basePage = new BasePage();
+        BasePage basePage = new BasePage(driver);
 
         basePage.navigate();
         String actual = basePage.getInvalidSum("Hello", "John");

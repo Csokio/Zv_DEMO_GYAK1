@@ -16,11 +16,13 @@ import java.time.Duration;
 
 public class Pages {
 
-    public static WebDriver driver;
+    protected static WebDriver driver;
 
-    //WebDriverWait wait;
+    public Pages(WebDriver driver) {
+        Pages.driver = driver;
+    }
 
-    public Pages() {
+    public static WebDriver initDriver(){
         if (driver == null) {
             WebDriverManager.chromedriver().setup();
 
@@ -37,10 +39,10 @@ public class Pages {
             driver = new ChromeDriver(options);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         }
+        return driver;
     }
 
-
-    public static void closeDriver()
+        public static void closeDriver()
     {
         if(driver != null){
             driver.close();
