@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -41,7 +43,7 @@ public class BasePage extends Pages {
         return findElementLocatedBy(SUM_NUMBERS).getText();
     }
 
-    //TODO Navigate To RadioPage
+    //TODO Navigate To pages.RadioPage
 
     private final By BUTTON_INPUT_FORMS = By.linkText("Input Forms");
     private final By BUTTON_RADIO_DEMO = By.linkText("Radio Buttons Demo");

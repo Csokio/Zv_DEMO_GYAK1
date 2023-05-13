@@ -1,5 +1,9 @@
+package tests;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pages.BasePage;
+import pages.RadioPage;
 
 public class RadioTest extends PageTest{
 

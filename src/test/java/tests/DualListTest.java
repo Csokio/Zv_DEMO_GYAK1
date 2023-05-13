@@ -1,5 +1,8 @@
+package tests;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pages.DualListPage;
 
 import java.util.HashMap;
 

@@ -1,4 +1,7 @@
+package tests;
+
 import org.junit.jupiter.api.*;
+import pages.BasePage;
 
 
 public class BaseTest extends PageTest{
