@@ -12,7 +12,7 @@ public class PageTest {
         new Pages();
     }
     @AfterAll
-    protected static void closeTheDriver()
+    public static void closeTheDriver()
     {
         Pages.closeDriver();
     }
